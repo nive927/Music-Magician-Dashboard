@@ -10,7 +10,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 
-df = pd.read_csv('data/full_music_filtered_by_date.csv')
+df = pd.read_csv('./processed-data/full_music_filtered_by_date.csv')
 df['release_date'] = pd.to_datetime(df['release_date'])
 
 st.title("Data by Song")

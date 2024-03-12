@@ -3,8 +3,8 @@ import pandas as pd
 import plotly.express as px
 
 # Load Data
-df = pd.read_csv('Data/data_by_year.csv')
-df_full = pd.read_csv('Data/full_music_data.csv')
+df = pd.read_csv('./processed-data/data_by_year.csv')
+df_full = pd.read_csv('./processed-data/full_music_data.csv')
 
 # Calculate % songs containing explicitness music by year using full dataset
 df['explicitness'] = df_full.groupby(['year'])['explicit'].mean().reset_index().explicit

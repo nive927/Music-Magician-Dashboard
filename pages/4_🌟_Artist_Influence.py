@@ -6,7 +6,7 @@ import networkx as nx
 import plotly.express as px
 from streamlit_agraph import agraph, Node, Edge, Config
 
-df = pd.read_csv('Data/influence_data.csv')
+df = pd.read_csv('./processed-data/influence_data.csv')
 st.title('Music Influence')
 
 st.write('Welcome to the Music Influence page! 🌐')
